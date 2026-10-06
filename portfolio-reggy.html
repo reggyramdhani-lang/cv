@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reggy Ramadhany — PM / BA / Project Manager Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--warm:#f6f5f4;--ink:rgba(0,0,0,.92);--muted:#615d59;--faint:#a39e98;--blue:#0075de;--bluebg:#f2f9ff;--border:1px solid rgba(0,0,0,.1);--green:#1aae39;--orange:#dd5b00;--radius:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;font-size:15.5px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 28px}
+.hero{padding:72px 0 36px;text-align:left}
+.badge{display:inline-block;background:var(--bluebg);color:#097fe8;font-size:12px;font-weight:600;letter-spacing:.4px;padding:4px 12px;border-radius:9999px;margin-bottom:16px}
+h1{font-size:46px;font-weight:700;letter-spacing:-1.6px;line-height:1.05;margin-bottom:12px}
+.sub{font-size:19px;color:var(--muted);max-width:700px;margin-bottom:20px}
+.statrow{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}
+.stat{border:var(--border);border-radius:var(--radius);padding:12px 18px;background:#fff;min-width:150px}
+.stat b{font-size:24px;display:block;letter-spacing:-.5px}
+.stat span{font-size:12.5px;color:var(--muted)}
+.case{border:var(--border);border-radius:16px;margin:26px 0;overflow:hidden;background:#fff}
+.case-head{padding:26px 30px 6px}
+.case-head .k{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--blue);font-weight:600;letter-spacing:.5px;text-transform:uppercase}
+.case-head h2{font-size:26px;letter-spacing:-.6px;margin:6px 0 8px;line-height:1.2}
+.story{padding:0 30px 10px;color:#2b2a28;font-size:15.5px}
+.story p+p{margin-top:10px}
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:var(--border);margin-top:14px}
+.cell{padding:16px 30px;border-bottom:var(--border)}
+.cell:nth-child(odd){border-right:var(--border)}
+.cell h4{font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:var(--faint);margin-bottom:8px}
+.cell ul{list-style:none}
+.cell li{font-size:14.5px;margin-bottom:6px;padding-left:16px;position:relative}
+.cell li:before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--blue)}
+.cell.proof li:before{background:var(--green)}
+.cell.result li:before{background:var(--orange)}
+.skilltag{display:inline-block;background:var(--warm);border:var(--border);border-radius:9999px;font-size:12.5px;padding:3px 11px;margin:0 6px 6px 0}
+.toolstript{padding:14px 30px;background:var(--warm);font-size:13.5px;color:var(--muted);border-top:var(--border)}
+.toolstript b{color:var(--ink)}
+.diagram{margin:16px 30px 22px;border:var(--border);border-radius:var(--radius);background:#0f1115;padding:18px;overflow-x:auto}
+.diagram.light{background:var(--warm);border:var(--border)}
+.diagram .cap{color:#8a877f;font-size:12px;font-family:ui-monospace,Menlo,monospace;margin-bottom:10px}
+.diagram.dark .cap{color:#7d8590}
+.quote{border-left:3px solid var(--blue);background:var(--bluebg);margin:12px 30px;padding:12px 18px;font-size:14.5px;font-style:italic;border-radius:0 8px 8px 0}
+.ongoing{display:inline-block;background:#fff4e5;color:#9a5b00;font-size:12px;font-weight:600;padding:3px 10px;border-radius:9999px;margin-left:8px;vertical-align:middle}
+.footer{padding:40px 0 80px;color:var(--faint);font-size:13px}
+svg text{font-family:'JetBrains Mono',monospace}
+@media(max-width:640px){h1{font-size:32px}.grid4{grid-template-columns:1fr}.cell:nth-child(odd){border-right:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+<div class="badge">PORTFOLIO &middot; PRODUCT MANAGER / BUSINESS ANALYST / PROJECT MANAGER &middot; IOT</div>
+<h1>Reggy Ramadhany</h1>
+<p class="sub">I work where hardware meets software and farmers meet dashboards. Maritime IoT now, agri IoT before that. I write the PRD, run the numbers, and stay until the field team can actually install the thing.</p>
+<div class="statrow">
+<div class="stat"><b>23</b><span>initiatives touched</span></div>
+<div class="stat"><b>1</b><span>published PRD, 16 sections</span></div>
+<div class="stat"><b>15</b><span>initiatives in estimation model</span></div>
+<div class="stat"><b>43</b><span>tasks, one vessel upgrade</span></div>
+<div class="stat"><b>964</b><span>farmers surveyed Q2+Q3+CES</span></div>
+<div class="stat"><b>442</b><span>Notion tasks created</span></div>
+<div class="stat"><b>282</b><span>Completed + Done</span></div>
+</div>
+</div>
+
+<!-- CASE 1 -->
+<div class="case">
+<div class="case-head"><div class="k">Case 01 &middot; Maritime IoT &middot; Product Manager</div>
+<h2>From four inboxes to three products: the decision framework behind VMS, BuMS, and CTMS</h2></div>
+<div class="story">
+<p>Requests arrived from four directions at once — vessel monitoring, bunkering, cargo, and port surveillance inputs — plus market insight and an upcoming-project list. Meanwhile the grand plan was mapped but development kept getting interrupted by adhoc work. Nobody could answer which requests deserved a build, which deserved a buy, and which deserved a hold.</p>
+<p>I put the whole triage on one Whimsical board: intake from all four sources plus market insight, a synthesis step owned by the product team, then a Product Decision Framework with two tracks. Core-based development asks build-from-scratch, modify-existing, integrate pre-made, hold, or scratch. Fast delivery asks vendoring-separately, use-released-feature, integrate pre-made, hold, or scratch. Both tracks converge on one gate — business and engineering needs — and exit as either Product Deliverables or Core Tech Ready to Implement. My own notes on that board say it plainly: find clarity on incoming projects, list what users actually need, and fix the adhoc jam.</p>
+<p>That framework is what produced three products instead of one fuzzy platform. VMS v1.0 is fully Released. VMS v2.0 is Deployed on pilot vessels going through a three-month reliability trial. BuMS v1.0 is Deployed as a proof of concept on a pilot vessel, with automatic valve control still in Testing because there is no test rig for output control. CTMS v1.0 sits in Research, gateways and sensor integrations mapped but not started. Three P3 bets are Developing but honestly on hold: wind-data NMEA waits on a sensor that is not available, power monitoring waits on PCB budget, and the NMEA multiplexer waits on a purchase order that does not exist yet.</p>
+</div>
+<div class="diagram dark"><div class="cap">PM DECISION FLOW — FROM WHIMSICAL BOARD (CLIENT NAMES REDACTED)</div>
+<svg width="940" height="470" viewBox="0 0 940 470" fill="none">
+<defs><marker id="arw" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" stroke="#58a6ff" stroke-width="1.5" fill="none"/></marker></defs>
+<g font-size="10">
+<rect x="4" y="26" width="150" height="58" rx="8" fill="rgba(34,211,238,.1)" stroke="#22d3ee" stroke-width="1.5"/><text x="79" y="50" fill="#e6edf3" text-anchor="middle">Vessel input</text><text x="79" y="66" fill="#7d8590" text-anchor="middle" font-size="8.5">monitoring req</text>
+<rect x="158" y="26" width="150" height="58" rx="8" fill="rgba(34,211,238,.1)" stroke="#22d3ee" stroke-width="1.5"/><text x="233" y="50" fill="#e6edf3" text-anchor="middle">Bunkering input</text><text x="233" y="66" fill="#7d8590" text-anchor="middle" font-size="8.5">ops req</text>
+<rect x="312" y="26" width="150" height="58" rx="8" fill="rgba(34,211,238,.1)" stroke="#22d3ee" stroke-width="1.5"/><text x="387" y="50" fill="#e6edf3" text-anchor="middle">Cargo input</text><text x="387" y="66" fill="#7d8590" text-anchor="middle" font-size="8.5">tank req</text>
+<rect x="466" y="26" width="150" height="58" rx="8" fill="rgba(34,211,238,.1)" stroke="#22d3ee" stroke-width="1.5"/><text x="541" y="50" fill="#e6edf3" text-anchor="middle">Port surv. input</text><text x="541" y="66" fill="#7d8590" text-anchor="middle" font-size="8.5">surveillance</text>
+<rect x="620" y="26" width="150" height="58" rx="8" fill="rgba(148,163,184,.12)" stroke="#94a3b8" stroke-width="1.5"/><text x="695" y="50" fill="#e6edf3" text-anchor="middle">Market insight</text><text x="695" y="66" fill="#7d8590" text-anchor="middle" font-size="8.5">desk + field</text>
+<rect x="774" y="26" width="150" height="58" rx="8" fill="rgba(148,163,184,.12)" stroke="#94a3b8" stroke-width="1.5"/><text x="849" y="50" fill="#e6edf3" text-anchor="middle">Upcoming list</text><text x="849" y="66" fill="#7d8590" text-anchor="middle" font-size="8.5">project queue</text>
+<rect x="4" y="104" width="920" height="54" rx="8" fill="rgba(52,211,153,.12)" stroke="#34d399" stroke-width="1.5"/><text x="464" y="126" fill="#e6edf3" text-anchor="middle">PRODUCT TEAM — synthesis</text><text x="464" y="143" fill="#7d8590" text-anchor="middle" font-size="8.5">pre-dev check · PRD · specs · feedback · user stories · stakeholder alignment</text>
+<line x1="79" y1="84" x2="79" y2="102" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw)"/><line x1="233" y1="84" x2="233" y2="102" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw)"/><line x1="387" y1="84" x2="387" y2="102" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw)"/><line x1="541" y1="84" x2="541" y2="102" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw)"/><line x1="695" y1="84" x2="695" y2="102" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw)"/><line x1="849" y1="84" x2="849" y2="102" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw)"/>
+<rect x="4" y="178" width="456" height="224" rx="10" fill="rgba(251,191,36,.07)" stroke="#fbbf24" stroke-width="1.5"/><text x="20" y="202" fill="#fbbf24" font-size="10">CORE-BASED DEVELOPMENT</text>
+<rect x="16" y="212" width="432" height="26" rx="5" fill="rgba(52,211,153,.18)" stroke="#34d399"/><text x="28" y="230" fill="#e6edf3">Build from Scratch</text>
+<rect x="16" y="244" width="432" height="26" rx="5" fill="rgba(52,211,153,.18)" stroke="#34d399"/><text x="28" y="262" fill="#e6edf3">Modify Existing</text>
+<rect x="16" y="276" width="432" height="26" rx="5" fill="rgba(52,211,153,.18)" stroke="#34d399"/><text x="28" y="294" fill="#e6edf3">Integrate Pre-Made System</text>
+<rect x="16" y="308" width="432" height="26" rx="5" fill="rgba(52,211,153,.18)" stroke="#34d399"/><text x="28" y="326" fill="#e6edf3">Hold</text>
+<rect x="16" y="340" width="432" height="26" rx="5" fill="rgba(52,211,153,.18)" stroke="#34d399"/><text x="28" y="358" fill="#e6edf3">Scratch</text>
+<rect x="480" y="178" width="456" height="224" rx="10" fill="rgba(251,191,36,.07)" stroke="#fbbf24" stroke-width="1.5"/><text x="496" y="202" fill="#fbbf24" font-size="10">DELIVERING FAST DEVELOPMENT</text>
+<rect x="492" y="212" width="432" height="26" rx="5" fill="rgba(34,211,238,.14)" stroke="#22d3ee"/><text x="504" y="230" fill="#e6edf3">Vendoring Separately</text>
+<rect x="492" y="244" width="432" height="26" rx="5" fill="rgba(34,211,238,.14)" stroke="#22d3ee"/><text x="504" y="262" fill="#e6edf3">Use Released Feature</text>
+<rect x="492" y="276" width="432" height="26" rx="5" fill="rgba(34,211,238,.14)" stroke="#22d3ee"/><text x="504" y="294" fill="#e6edf3">Integrate Pre-Made System</text>
+<rect x="492" y="308" width="432" height="26" rx="5" fill="rgba(34,211,238,.14)" stroke="#22d3ee"/><text x="504" y="326" fill="#e6edf3">Hold</text>
+<rect x="492" y="340" width="432" height="26" rx="5" fill="rgba(34,211,238,.14)" stroke="#22d3ee"/><text x="504" y="358" fill="#e6edf3">Scratch</text>
+<text x="4" y="420" fill="#7d8590" font-size="9.5">both tracks converge on one gate → Business / Engineering Needs → exit as Product Deliverables or Core Tech Ready to Implement</text>
+<text x="4" y="440" fill="#7d8590" font-size="9.5">my board notes: clarity on incoming projects · list what users actually need · grand plan mapped but adhoc kept jamming delivery</text>
+</g></svg></div>
+<div class="diagram light"><div class="cap">3 PRODUCTS FROM THE SHEET — PRODUCT BREAKDOWN V2.0 (78 ROWS)</div>
+<svg width="940" height="212" viewBox="0 0 940 212" fill="none">
+<g font-size="10.5">
+<rect x="4" y="8" width="300" height="140" rx="8" fill="#fff" stroke="rgba(0,0,0,.2)"/><text x="16" y="32" fill="#111" font-weight="700">VMS — vessel monitoring</text><text x="16" y="52" fill="#1aae39" font-size="9.5">v1.0 Released · v2.0 Deployed pilot</text><text x="16" y="72" fill="#615d59" font-size="9.5">PAIO + tracker + PACEL + IPC + HMI</text><text x="16" y="90" fill="#615d59" font-size="9.5">P1 prod-dev · P2 pilot project</text><text x="16" y="108" fill="#615d59" font-size="9.5">v2.0 in 3-month reliability trial</text><text x="16" y="130" fill="#a39e98" font-size="9">fuel flow/tank · ME/AE · GPS · VSAT</text>
+<rect x="312" y="8" width="300" height="140" rx="8" fill="#fff" stroke="rgba(0,0,0,.2)"/><text x="324" y="32" fill="#111" font-weight="700">BuMS — bunkering</text><text x="324" y="52" fill="#0075de" font-size="9.5">v1.0 Deployed PoC pilot</text><text x="324" y="72" fill="#615d59" font-size="9.5">panel + fuel stick + radar + flowmeter</text><text x="324" y="90" fill="#615d59" font-size="9.5">transaction logic + receipt output</text><text x="324" y="108" fill="#dd5b00" font-size="9.5">auto valve: Testing (no test rig)</text><text x="324" y="130" fill="#a39e98" font-size="9">P2 MMS + P1 BuMS · PoC stage</text>
+<rect x="620" y="8" width="312" height="140" rx="8" fill="#fff" stroke="rgba(0,0,0,.2)"/><text x="632" y="32" fill="#111" font-weight="700">CTMS — cargo tank</text><text x="632" y="52" fill="#a39e98" font-size="9.5">v1.0 Research</text><text x="632" y="72" fill="#615d59" font-size="9.5">4-20mA + HART gateways mapped</text><text x="632" y="90" fill="#615d59" font-size="9.5">level / temp / pressure + trim + alerts</text><text x="632" y="108" fill="#615d59" font-size="9.5">mapped, not started</text><text x="632" y="130" fill="#a39e98" font-size="9">P1 CTMS · research stage</text>
+<rect x="4" y="156" width="928" height="46" rx="8" fill="#fff7e5" stroke="#dd5b00"/><text x="16" y="176" fill="#111" font-size="9.5">P3 bets — Developing but honestly on hold:</text><text x="16" y="193" fill="#615d59" font-size="9">wind-data NMEA (no sensor) · power monitoring (PCB budget) · NMEA multiplexer (no PO)</text>
+</g></svg></div>
+<div class="grid4">
+<div class="cell proof"><h4>Bukti</h4><ul>
+<li>Whimsical decision board: 4 intake sources + market insight + upcoming list → synthesis → 2-track framework → Needs gate → Deliverables / Core Tech Ready</li>
+<li>Product Breakdown v2.0 (78 rows): VMS v1.0 Released, VMS v2.0 Deployed pilot, BuMS v1.0 Deployed PoC, CTMS v1.0 Research, 3 P3 bets Developing-on-hold with reasons</li>
+<li>PRD FuMS 16 sections (~33.5 KB) with DARCI, decision log, competitor benchmark — used by 5 people (tribe manager, software PM, hardware lead, software lead, technical writer)</li></ul></div>
+<div class="cell result"><h4>Hasil</h4><ul>
+<li>One fuzzy platform became 3 staged products with honest statuses — no more selling research as released</li>
+<li>Adhoc requests now face a visible gate instead of interrupting sprints silently</li>
+<li>Onboarding impact felt but unmeasured — no number claimed</li></ul></div>
+<div class="cell"><h4>Skill</h4><div><span class="skilltag">Product triage & intake design</span><span class="skilltag">Build / buy / hold decisions</span><span class="skilltag">PRD writing (DARCI + decision log)</span><span class="skilltag">Stakeholder mapping & alignment</span><span class="skilltag">Roadmap staging (Released → Pilot → PoC → Research)</span><span class="skilltag">Competitor benchmarking</span><span class="skilltag">Information architecture</span></div></div>
+<div class="cell"><h4>Tools</h4><div><span class="skilltag">Whimsical flow board</span><span class="skilltag">Sheets Product Breakdown</span><span class="skilltag">Google Docs + chrome template</span><span class="skilltag">Markdown product knowledge</span><span class="skilltag">Figma / Miro</span><span class="skilltag">Jira + Notion</span></div></div>
+</div>
+<div class="toolstript"><b>Honest gap:</b> vessel count per product to be confirmed later — statuses above are per-sheet, not per-ship. Onboarding time before vs after PRD still unmeasured.</div>
+</div>
+
+<!-- CASE 2 -->
+<div class="case">
+<div class="case-head"><div class="k">Case 02 &middot; Maritime IoT &middot; PM / Project Manager</div>
+<h2>Thirty initiatives, one lifecycle: how the PM column actually runs them</h2></div>
+<div class="story">
+<p>Fifteen items in the old model became thirty in the real log — MI-26-000 through MI-26-029, mixing RnD, product development, and project delivery. Every status meeting still asked the same three questions: how long, who is blocked, what ships first. The Whimsical board gave me the answer in one column: my Product Manager lane runs requirement into lifecycle management, then UAT external, POC, stakeholder mapping, timeline managing, and facilitation into engineer, product, and tribe — with a named document at every step.</p>
+<p>Beside that lane sits the Product Owner rituals that keep delivery honest: backlog with acceptance criteria and user stories, sprint planning and review, internal UAT, product research and analysis. Upstream of both, the research chain feeds us: the operation manager drives data product and analytics into technical research, the analyst feeds technical research directly. Nothing enters the lifecycle without passing through that chain first.</p>
+<p>The Initiative Log proves the lifecycle is loaded. Four deliveries are Done — Vanguard fuel monitoring (FAT done, installed early September), a second vessel delivery, a Megawati proof of concept (FAT done, install date pending), and the Ligo fuel-stick integration closed in Sprint 29. Five are In Progress — power monitoring with alerts, a Bumi Nusantara fuel install, the 4-20 mA receiver gateway, automatic valve control, and the AIO module evaluation. One flagship is New and fully gated: the Palu Sipat bunkering automation, milestones M0 through M7, October to mid-January. The rest sit in Hold or Initiating with the reason written down — no sensor in the office, no client need yet, use case still unclear. That honesty is the milestone system working.</p>
+</div>
+<div class="diagram dark"><div class="cap">PM LIFECYCLE — FROM WHIMSICAL BOARD (CLIENT NAMES REDACTED)</div>
+<svg width="940" height="400" viewBox="0 0 940 400" fill="none">
+<defs><marker id="arw2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" stroke="#58a6ff" stroke-width="1.5" fill="none"/></marker></defs>
+<g font-size="10">
+<rect x="4" y="20" width="300" height="48" rx="8" fill="rgba(148,163,184,.1)" stroke="#94a3b8" stroke-width="1.5"/><text x="154" y="40" fill="#e6edf3" text-anchor="middle">POM → data product / analytic</text><text x="154" y="56" fill="#7d8590" text-anchor="middle" font-size="8.5">upstream research chain</text>
+<rect x="312" y="20" width="300" height="48" rx="8" fill="rgba(148,163,184,.1)" stroke="#94a3b8" stroke-width="1.5"/><text x="462" y="40" fill="#e6edf3" text-anchor="middle">Analyst → technical research</text><text x="462" y="56" fill="#7d8590" text-anchor="middle" font-size="8.5">upstream research chain</text>
+<rect x="620" y="20" width="312" height="48" rx="8" fill="rgba(148,163,184,.1)" stroke="#94a3b8" stroke-width="1.5"/><text x="776" y="40" fill="#e6edf3" text-anchor="middle">Market insight + upcoming list</text><text x="776" y="56" fill="#7d8590" text-anchor="middle" font-size="8.5">intake</text>
+<rect x="4" y="88" width="200" height="52" rx="8" fill="rgba(251,191,36,.14)" stroke="#fbbf24" stroke-width="1.5"/><text x="104" y="110" fill="#e6edf3" text-anchor="middle">REQUIREMENT</text><text x="104" y="126" fill="#7d8590" text-anchor="middle" font-size="8.5">feeds lifecycle</text>
+<rect x="212" y="88" width="300" height="52" rx="8" fill="rgba(52,211,153,.14)" stroke="#34d399" stroke-width="1.5"/><text x="362" y="110" fill="#e6edf3" text-anchor="middle">PRODUCT LIFE CYCLE MGMT</text><text x="362" y="126" fill="#7d8590" text-anchor="middle" font-size="8.5">the hub</text>
+<rect x="520" y="88" width="200" height="52" rx="8" fill="rgba(167,139,250,.14)" stroke="#a78bfa" stroke-width="1.5"/><text x="620" y="110" fill="#e6edf3" text-anchor="middle">UAT EXTERNAL</text><text x="620" y="126" fill="#7d8590" text-anchor="middle" font-size="8.5">with customer</text>
+<rect x="728" y="88" width="204" height="52" rx="8" fill="rgba(167,139,250,.14)" stroke="#a78bfa" stroke-width="1.5"/><text x="830" y="110" fill="#e6edf3" text-anchor="middle">POC</text><text x="830" y="126" fill="#7d8590" text-anchor="middle" font-size="8.5">prove, then scale</text>
+<rect x="4" y="158" width="228" height="52" rx="8" fill="rgba(52,211,153,.14)" stroke="#34d399" stroke-width="1.5"/><text x="118" y="180" fill="#e6edf3" text-anchor="middle">STAKEHOLDER MAPPING</text><text x="118" y="196" fill="#7d8590" text-anchor="middle" font-size="8.5">matrix, not vibes</text>
+<rect x="240" y="158" width="228" height="52" rx="8" fill="rgba(52,211,153,.14)" stroke="#34d399" stroke-width="1.5"/><text x="354" y="180" fill="#e6edf3" text-anchor="middle">TIMELINE MANAGING</text><text x="354" y="196" fill="#7d8590" text-anchor="middle" font-size="8.5">gantt + gates</text>
+<rect x="476" y="158" width="228" height="52" rx="8" fill="rgba(52,211,153,.14)" stroke="#34d399" stroke-width="1.5"/><text x="590" y="180" fill="#e6edf3" text-anchor="middle">FACILITATOR → TRIBE</text><text x="590" y="196" fill="#7d8590" text-anchor="middle" font-size="8.5">engineer · product · tribe</text>
+<rect x="712" y="158" width="220" height="52" rx="8" fill="rgba(26,174,57,.14)" stroke="#1aae39" stroke-width="1.5"/><text x="822" y="180" fill="#e6edf3" text-anchor="middle">HANDOVER + CLOSED</text><text x="822" y="196" fill="#7d8590" text-anchor="middle" font-size="8.5">as-built + contract</text>
+<line x1="204" y1="114" x2="210" y2="114" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw2)"/><line x1="512" y1="114" x2="518" y2="114" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw2)"/><line x1="720" y1="114" x2="726" y2="114" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw2)"/><line x1="118" y1="140" x2="118" y2="156" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw2)"/><line x1="232" y1="184" x2="238" y2="184" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw2)"/><line x1="468" y1="184" x2="474" y2="184" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw2)"/><line x1="704" y1="184" x2="710" y2="184" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw2)"/>
+<rect x="4" y="228" width="928" height="70" rx="8" fill="rgba(34,211,238,.07)" stroke="#22d3ee" stroke-width="1.5"/><text x="16" y="250" fill="#22d3ee" font-size="9.5">DOCS AT EVERY STEP — PRD · timeline doc · report doc · kickoff deck · working instructions · datasheet · product knowledge · config guide</text><text x="16" y="270" fill="#7d8590" font-size="9">PO rituals alongside: backlog (AC + user stories) · sprint planning / review · internal UAT · product research &amp; analysis</text>
+<text x="4" y="318" fill="#7d8590" font-size="9.5">milestones live in Timeline tab: Palu Sipat M0–M7 (sensor eval → PO → 3-wk vendor lead → panel → firmware → bench → install → field → UAT) plus SIPOMON PoC, CAN parser PoC, 4-20 mA gateway PoC</text>
+<text x="4" y="338" fill="#7d8590" font-size="9.5">Master Backlog: 193 rows × 21 cols, code → task → manhour → story point → role → module → AC → DoD → sprint (Sprint 28–33 tabs)</text>
+<text x="4" y="358" fill="#fbbf24" font-size="9.5">estimation kept honest: (max role weeks + serial) × 1.15 on 32h/wk cap — method, not precision; inputs marked DRAFT until real breakdowns land</text>
+</g></svg></div>
+<div class="grid4">
+<div class="cell proof"><h4>Bukti</h4><ul>
+<li>Initiative Log (31 rows, MI-26-000 → 029): 4 Done, 6 In Progress, 2 New, rest Hold / Initiating with written reasons</li>
+<li>Done: Vanguard fuel install (FAT done, installed early Sep), second vessel delivery, Megawati PoC (FAT done, install pending), Ligo fuel-stick closed Sprint 29</li>
+<li>New flagship fully gated: Palu Sipat bunkering automation, M0–M7 Oct → mid-Jan; every Hold states why (no sensor, no client need, unclear use case)</li>
+<li>Master Backlog 193 rows × 21 cols → Sprint 28–33 tabs; Timeline tab holds SIPOMON, CAN parser, 4-20 mA gateway PoCs</li></ul></div>
+<div class="cell result"><h4>Hasil</h4><ul>
+<li>One lifecycle for 3 work types — RnD, product dev, delivery share the same gate vocabulary</li>
+<li>Holds stopped being shameful: a Hold with a reason is a decision, not a delay</li>
+<li>Vendor lead time became a visible hard gate instead of a surprise — firmware waits for sensors, stated upfront</li></ul></div>
+<div class="cell"><h4>Skill</h4><div><span class="skilltag">Lifecycle management</span><span class="skilltag">Requirement → UAT → POC flow</span><span class="skilltag">Stakeholder mapping (matrix)</span><span class="skilltag">Timeline & milestone gating</span><span class="skilltag">Backlog with AC + user stories</span><span class="skilltag">Sprint planning & review</span><span class="skilltag">UAT internal + external</span><span class="skilltag">Product research & analysis</span><span class="skilltag">Risk & dependency calls (hold / scratch)</span><span class="skilltag">Handover & close-out</span></div></div>
+<div class="cell"><h4>Tools</h4><div><span class="skilltag">Whimsical lifecycle board</span><span class="skilltag">Sheets Initiative Log</span><span class="skilltag">Sheets Timeline + gantt</span><span class="skilltag">Master Backlog + Sprint tabs</span><span class="skilltag">Jira cards & moves</span><span class="skilltag">Notion task DB</span><span class="skilltag">Slack channel + DM</span><span class="skilltag">PRD / report / kickoff docs</span></div></div>
+</div>
+<div class="toolstript"><b>Honest gap:</b> estimation formula kept as method ((max role weeks + serial) × 1.15, 32h/wk cap) — inputs marked DRAFT until real breakdowns land. Vessel count per initiative to confirm later.</div>
+</div>
+
+<!-- CASE 3 -->
+<div class="case">
+<div class="case-head"><div class="k">Case 03 &middot; Maritime IoT &middot; Project Manager <span class="ongoing">GATED — STARTS 26 OCT 2026</span></div>
+<h2>One bunkering automation, eight gates: the Palu Sipat M0–M7 run</h2></div>
+<div class="story">
+<p>The flagship delivery in the log is a bunkering automation for a Patra Niaga tanker — pressure and viscosity sensing, pressure-based valve loop control, 3-phase pump start/stop, then field testing and commissioning aboard. It sits at New / Ready for Review, which is exactly why it belongs in a portfolio: the plan is fully gated before a single wire is cut.</p>
+<p>The Timeline tab runs it as eight gates from late October to mid-January. M0 evaluates and selects the 0.01 bar pressure/vacuum transmitter plus viscosity sensor in three days. M1 issues the sensor PO in a day. Then a three-week vendor lead-time gate the plan refuses to hide: firmware cannot start reading sensors until they arrive on 23 November. Panel design and fabrication (tasks T8–T11) run in parallel with the wait instead of after it. M3 implements firmware and software — sensor reading, calibration, valve loop, pump control, logging, data contract, HMI support (T12–T19, T33, T34). M4 bench-tests the pressure loop at the shop with fault injection. M5 installs panel, sensors, and wiring aboard over three days. M6 field-tests under real bunkering simulation and tunes the logic. M7 closes with customer UAT, as-built docs, and data-contract handover.</p>
+<p>Around it run three parallel proof tracks on the same Timeline: the power-monitoring PoC, a CAN parser for marine panels, and an 8-channel 4-20 mA to Modbus gateway — each with its own bench test before anything goes near a vessel. The Master Backlog behind all of this is 193 rows by 21 columns, flowing through Sprint 28 to 33 tabs, every task carrying manhour, story point, role, module, acceptance criteria, definition of done, and sprint.</p>
+</div>
+<div class="diagram dark"><div class="cap">PALU SIPAT M0–M7 — 26 OCT 2026 → 13 JAN 2027 · VENDOR LEAD IS A HARD GATE</div>
+<svg width="940" height="330" viewBox="0 0 940 330" fill="none">
+<defs><marker id="arw3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" stroke="#58a6ff" stroke-width="1.5" fill="none"/></marker></defs>
+<g font-size="10">
+<rect x="4" y="18" width="170" height="52" rx="8" fill="rgba(52,211,153,.14)" stroke="#34d399" stroke-width="1.5"/><text x="89" y="40" fill="#e6edf3" text-anchor="middle">M0 sensor eval</text><text x="89" y="56" fill="#7d8590" text-anchor="middle" font-size="8.5">26–28 Oct · 3 days</text>
+<rect x="178" y="18" width="130" height="52" rx="8" fill="rgba(52,211,153,.14)" stroke="#34d399" stroke-width="1.5"/><text x="243" y="40" fill="#e6edf3" text-anchor="middle">M1 PO out</text><text x="243" y="56" fill="#7d8590" text-anchor="middle" font-size="8.5">2 Nov · 1 day</text>
+<rect x="312" y="18" width="220" height="52" rx="8" fill="rgba(251,113,133,.14)" stroke="#fb7185" stroke-width="1.5"/><text x="422" y="40" fill="#e6edf3" text-anchor="middle">VENDOR LEAD — 3 wks</text><text x="422" y="56" fill="#7d8590" text-anchor="middle" font-size="8.5">3–23 Nov · hard gate</text>
+<rect x="536" y="18" width="200" height="52" rx="8" fill="rgba(34,211,238,.12)" stroke="#22d3ee" stroke-width="1.5"/><text x="636" y="40" fill="#e6edf3" text-anchor="middle">M2 panel in parallel</text><text x="636" y="56" fill="#7d8590" text-anchor="middle" font-size="8.5">3–12 Nov · T8–T11</text>
+<rect x="740" y="18" width="192" height="52" rx="8" fill="rgba(251,191,36,.12)" stroke="#fbbf24" stroke-width="1.5"/><text x="836" y="40" fill="#e6edf3" text-anchor="middle">M3 firmware</text><text x="836" y="56" fill="#7d8590" text-anchor="middle" font-size="8.5">23 Nov–9 Dec</text>
+<line x1="174" y1="44" x2="176" y2="44" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw3)"/><line x1="308" y1="44" x2="310" y2="44" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw3)"/><line x1="532" y1="44" x2="534" y2="44" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw3)"/><line x1="736" y1="44" x2="738" y2="44" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw3)"/>
+<rect x="4" y="88" width="220" height="52" rx="8" fill="rgba(167,139,250,.14)" stroke="#a78bfa" stroke-width="1.5"/><text x="114" y="110" fill="#e6edf3" text-anchor="middle">M4 bench test</text><text x="114" y="126" fill="#7d8590" text-anchor="middle" font-size="8.5">10–18 Dec · fault inject</text>
+<rect x="228" y="88" width="220" height="52" rx="8" fill="rgba(167,139,250,.14)" stroke="#a78bfa" stroke-width="1.5"/><text x="338" y="110" fill="#e6edf3" text-anchor="middle">M5 install aboard</text><text x="338" y="126" fill="#7d8590" text-anchor="middle" font-size="8.5">21–23 Dec · commiss.</text>
+<rect x="452" y="88" width="240" height="52" rx="8" fill="rgba(167,139,250,.14)" stroke="#a78bfa" stroke-width="1.5"/><text x="572" y="110" fill="#e6edf3" text-anchor="middle">M6 field test + tune</text><text x="572" y="126" fill="#7d8590" text-anchor="middle" font-size="8.5">28 Dec–11 Jan · regress</text>
+<rect x="696" y="88" width="236" height="52" rx="8" fill="rgba(26,174,57,.14)" stroke="#1aae39" stroke-width="1.5"/><text x="814" y="110" fill="#e6edf3" text-anchor="middle">M7 UAT + handover</text><text x="814" y="126" fill="#7d8590" text-anchor="middle" font-size="8.5">12–13 Jan · as-built</text>
+<line x1="224" y1="114" x2="226" y2="114" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw3)"/><line x1="448" y1="114" x2="450" y2="114" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw3)"/><line x1="692" y1="114" x2="694" y2="114" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw3)"/>
+<rect x="4" y="158" width="928" height="62" rx="8" fill="rgba(34,211,238,.06)" stroke="#22d3ee" stroke-width="1.5"/><text x="16" y="180" fill="#22d3ee" font-size="9.5">PARALLEL POC TRACKS — same Timeline tab, bench-tested before any vessel sees them</text><text x="16" y="200" fill="#7d8590" font-size="9">SIPOMON power monitoring PoC (Aug–Oct) · CAN J1939 parser PoC (Sep–Oct) · 8-ch 4-20 mA gateway PoC (Sep–Nov)</text>
+<text x="4" y="240" fill="#7d8590" font-size="9.5">engine behind it: Master Backlog 193 rows × 21 cols → Sprint 28–33 tabs · every task: manhour + story point + role + module + AC + DoD</text>
+<text x="4" y="260" fill="#7d8590" font-size="9.5">Sprint 28–29 carried power-monitoring + NMEA · Sprint 30 carried Bumi Nusantara fuel + 3-phase AE tap · Sprint 31–33 carried SIPOMON build-out</text>
+<text x="4" y="280" fill="#fbbf24" font-size="9.5">PM lane on the board runs this delivery: requirement → lifecycle → UAT external → POC → stakeholder map → timeline → facilitate tribe → handover</text>
+</g></svg></div>
+<div class="grid4">
+<div class="cell proof"><h4>Bukti</h4><ul>
+<li>Timeline tab: Palu Sipat M0–M7 with dates (26 Oct → 13 Jan), vendor lead drawn as a gate not a footnote</li>
+<li>Initiative MI-26-029 (New / Ready for Review) with full delivery scope: pressure + viscosity sensing, valve loop, 3-phase pump control, commissioning</li>
+<li>Master Backlog task refs inside milestones (T8–T11 panel, T12–T19 + T33–T34 firmware) — dates trace to real tasks</li>
+<li>3 parallel PoCs on the same Timeline, each ending in bench test before vessel contact</li></ul></div>
+<div class="cell result"><h4>Hasil</h4><ul>
+<li>Vendor wait scheduled in parallel with panel fab instead of discovered mid-sprint</li>
+<li>Firmware blockage stated upfront (starts 23 Nov, not before) — no fantasy start dates</li>
+<li>Field tuning gets its own two-week window with regression, not squeezed after install</li></ul></div>
+<div class="cell"><h4>Skill</h4><div><span class="skilltag">Project scoping & WBS</span><span class="skilltag">Milestone gating (M0–M7)</span><span class="skilltag">Dependency & critical-path calls</span><span class="skilltag">Vendor & procurement timing</span><span class="skilltag">Risk planning (lead-time buffer)</span><span class="skilltag">Sprint planning & execution</span><span class="skilltag">Test planning (bench + fault injection)</span><span class="skilltag">Installation & commissioning</span><span class="skilltag">Field testing & tuning</span><span class="skilltag">UAT with customer</span><span class="skilltag">As-built docs & handover</span><span class="skilltag">Cross-functional orchestration</span></div></div>
+<div class="cell"><h4>Tools</h4><div><span class="skilltag">Sheets Timeline + gantt</span><span class="skilltag">Master Backlog (21 cols)</span><span class="skilltag">Sprint 28–33 tabs</span><span class="skilltag">Initiative Log</span><span class="skilltag">Whimsical PM lane</span><span class="skilltag">Jira cards & moves</span><span class="skilltag">Notion task DB</span><span class="skilltag">Slack channel + DM</span><span class="skilltag">Test plan + install checklist</span></div></div>
+</div>
+<div class="toolstript"><b>Honest gap:</b> Palu Sipat starts 26 Oct 2026 — plan gated, execution pending. Vessel count per product to confirm later; statuses above are per-sheet, not per-ship.</div>
+</div>
+
+<!-- CASE 4 -->
+<div class="case">
+<div class="case-head"><div class="k">Case 04 &middot; Agri IoT eFeeder &middot; Researcher / BA</div>
+<h2>Satisfaction was high. Renewals were not. I found out why.</h2></div>
+<div class="story">
+<p>4,405 farmers used the feeder out of 375,384 registered — 1.17 percent. Of those, 1,922 churned. Trial signups looked great, then payment time came and people walked away. I designed the questionnaire, ran Q2 with 288 and Q3 with 334 farmers, and ran the regressions. Product satisfaction multiplied resubscribe odds by 1.8, price by 1.3, billing by 1.141. Service politeness did not move retention. The uncomfortable finding: 92 percent of churn came from free-promo orders.</p>
+</div>
+<div class="diagram dark"><div class="cap">FROM 375K REGISTERED → 4.4K USERS → 1.9K CHURNED</div>
+<svg width="940" height="150" viewBox="0 0 940 150" fill="none">
+<g font-size="11">
+<rect x="4" y="30" width="420" height="52" rx="8" fill="rgba(148,163,184,.12)" stroke="#94a3b8"/><text x="16" y="52" fill="#e6edf3">375,384 registered farmers</text><text x="16" y="68" fill="#7d8590" font-size="9">the universe</text>
+<rect x="444" y="30" width="240" height="52" rx="8" fill="rgba(34,211,238,.12)" stroke="#22d3ee"/><text x="456" y="52" fill="#e6edf3">4,405 users (1.17%)</text><text x="456" y="68" fill="#7d8590" font-size="9">Q2 n=288 · Q3 n=334</text>
+<rect x="704" y="30" width="228" height="52" rx="8" fill="rgba(251,113,133,.12)" stroke="#fb7185"/><text x="716" y="52" fill="#e6edf3">1,922 churned (43.6%)</text><text x="716" y="68" fill="#7d8590" font-size="9">92% from free promo</text>
+<text x="4" y="112" fill="#34d399">product ×1.8</text><text x="140" y="112" fill="#34d399">price ×1.3</text><text x="260" y="112" fill="#34d399">billing ×1.141</text><text x="420" y="112" fill="#7d8590">resubscribe odds · service n.s. · CSAT 7.4 → 7.9</text>
+</g></svg></div>
+<div class="quote">"Trial signups looked great, then payment time arrived and people walked away."</div>
+<div class="grid4">
+<div class="cell proof"><h4>Bukti</h4><ul>
+<li>CSAT 7.4 → 7.9 with price/product/service split per province</li>
+<li>Path analysis CSAT → NPS per variable; logistic regression table</li>
+<li>30% of fish and 24% of shrimp farmers said the feeder did not help</li></ul></div>
+<div class="cell result"><h4>Hasil</h4><ul>
+<li>Ranked answer: reliability first, price perception second, politeness distant third</li>
+<li>Promo gameplay exposed as trial-buyer, not retainer</li>
+<li>Dashboard the team could argue from instead of hunches</li></ul></div>
+<div class="cell"><h4>Skill</h4><div><span class="skilltag">Questionnaire design</span><span class="skilltag">Sampling</span><span class="skilltag">Path analysis</span><span class="skilltag">Logistic regression</span></div></div>
+<div class="cell"><h4>Tools</h4><div><span class="skilltag">SPSS</span><span class="skilltag">Power BI</span><span class="skilltag">Q2/Q3 PE reports</span><span class="skilltag">Tech support reports</span></div></div>
+</div>
+</div>
+
+<!-- CASE 5 -->
+<div class="case">
+<div class="case-head"><div class="k">Case 05 &middot; Agri IoT eFeeder &middot; Researcher / BA</div>
+<h2>Farmers kept rewiring the feeder. I measured the effort instead of blaming them.</h2></div>
+<div class="story">
+<p>Farmers kept modifying the unit, what diffusion research calls reinvention. I ran 58 exploratory questions plus 6 CES questions with 242 farmers. CES came out 20.7. Fourteen farmers did not understand basic Android use, about 40 percent of app operation was still done by field staff, and one pure product bug stood out: 35.9 percent of ponds were named with cobox initials, often by staff for convenience, so the system read two cobox IDs and timed out. The move-feeder feature had literally never been touched by a farmer.</p>
+</div>
+<div class="diagram dark"><div class="cap">CES = %EASY − %DIFFICULT = 20.7 &nbsp;·&nbsp; N=242</div>
+<svg width="940" height="150" viewBox="0 0 940 150" fill="none">
+<g font-size="11">
+<rect x="4" y="30" width="330" height="52" rx="8" fill="rgba(52,211,153,.15)" stroke="#34d399"/><text x="16" y="52" fill="#e6edf3">easy 109 / 242 ≈ 45%</text><text x="16" y="68" fill="#7d8590" font-size="9">scores 1–2 (my cut, documented)</text>
+<rect x="350" y="30" width="200" height="52" rx="8" fill="rgba(148,163,184,.12)" stroke="#94a3b8"/><text x="362" y="52" fill="#e6edf3">neutral</text><text x="362" y="68" fill="#7d8590" font-size="9">score 3</text>
+<rect x="566" y="30" width="366" height="52" rx="8" fill="rgba(251,113,133,.12)" stroke="#fb7185"/><text x="578" y="52" fill="#e6edf3">difficult ≈ 24% → CES 20.7</text><text x="578" y="68" fill="#7d8590" font-size="9">thrower jam · wifi · hang · FTS-dependent</text>
+<text x="4" y="112" fill="#fbbf24">35.9% ponds named with cobox initials → double-ID → schedule timeout</text>
+<text x="4" y="130" fill="#7d8590">move-feeder: never used by farmers, always staff · ~40% of app ops done by FTS</text>
+</g></svg></div>
+<div class="grid4">
+<div class="cell proof"><h4>Bukti</h4><ul>
+<li>CES scale definition + computation shown above</li>
+<li>Difficulty-reason frequencies; IPMA put pipe, control box, thrower in fix-first</li>
+<li>Thrower dominant issue across Q2+Q3 tech support and CSAT</li></ul></div>
+<div class="cell result"><h4>Hasil</h4><ul>
+<li>Throw distance in meters, not percent; seconds vs minutes clarified</li>
+<li>Feed-pause so farmers stop powering off; FCR/ADG simulation; rain-detection research</li>
+<li>Move-feeder + end-cycle re-socialized instead of re-coded</li></ul></div>
+<div class="cell"><h4>Skill</h4><div><span class="skilltag">CES design</span><span class="skilltag">Sensemaking</span><span class="skilltag">IPMA prioritization</span><span class="skilltag">User-flow forensics</span></div></div>
+<div class="cell"><h4>Tools</h4><div><span class="skilltag">SPSS</span><span class="skilltag">Power BI</span><span class="skilltag">Field interviews</span><span class="skilltag">App-squad research</span></div></div>
+</div>
+</div>
+
+<!-- CASE 6 -->
+<div class="case">
+<div class="case-head"><div class="k">Case 06 &middot; Agri IoT eFeeder &middot; Researcher / BA</div>
+<h2>What a feeder for Rp50 ribu ponds actually looks like</h2></div>
+<div class="story">
+<p>The main feeder fit big ponds. The mass market lives below 150 square meters — median in my sample 5 ponds at 94 square meters. They tried it on promo, did the math, and quit. One catfish farmer told me near harvest he refills constantly while still paying pond hands, so he pays double. I interviewed 8 mass-market users and 11 farmers across four regions about competitors, then wrote three spec directions: cheaper smaller anti-clog unit, operability a low-tech user survives, and cultivation intelligence that earns the phone app.</p>
+</div>
+<div class="quote">"Near harvest I refill constantly while still paying pond hands — I pay double." — catfish farmer on why promo trial did not convert</div>
+<div class="grid4">
+<div class="cell proof"><h4>Bukti</h4><ul>
+<li>Rp50–100rb range, smaller drum, anti-clog for bibis wet-mix — clogging #1 in Q2+Q3 CSAT</li>
+<li>Settable from cobox AND phone; feed-count display (12 asks), safety (8), waterproof cover (3)</li>
+<li>Only we rent with repair service; rivals sell outright — Garuda takes wet feed, Aquaeasy auto-offs</li></ul></div>
+<div class="cell result"><h4>Hasil</h4><ul>
+<li>Three spec directions with reasons, not wishes</li>
+<li>Mapped into app V3: rainfall on daily feed, feeder-log link, language switch, OCR, tooltips</li>
+<li>Pilot signal modest and stated as-is: 27.3% willing to retry the mini</li></ul></div>
+<div class="cell"><h4>Skill</h4><div><span class="skilltag">Segment research</span><span class="skilltag">Competitor teardown</span><span class="skilltag">Spec writing</span></div></div>
+<div class="cell"><h4>Tools</h4><div><span class="skilltag">In-depth interviews</span><span class="skilltag">Desk research</span><span class="skilltag">SPSS</span><span class="skilltag">Power BI</span></div></div>
+</div>
+<div class="toolstript"><b>Next:</b> extended Sanken feasibility with larger-scale mass-market farmers.</div>
+</div>
+
+<!-- CASE 7 -->
+<div class="case">
+<div class="case-head"><div class="k">Case 07 &middot; eFishery R&D &middot; Project Strategic Associate · Jul 2024 – Feb 2025</div>
+<h2>Research kept leaking. I gave it 11 stages and automated the nagging.</h2></div>
+<div class="story">
+<p>I joined Research and Engineering when every project lived in someone's head. Submission was a Slack message here, a Doc link there, a Jira card nobody updated. Projects got stuck in buffer planning with no manpower and went dormant. Head review had no reminder. My job was to make the whole thing visible and auditable without adding bureaucracy.</p>
+<p>I mapped all 11 stages from submit to closed, tied each stage to ISO 9001 Plan-Do-Check-Act, then automated the nagging with Slack, Jira, and Apps Script — routine listings with days-on-card, auto-generate the eval doc and attach it to the card, auto-screen completeness, notify the head-review buffer.</p>
+</div>
+<div class="diagram dark"><div class="cap">11 STAGES — SUBMIT → SCREEN → ANNOUNCE → PLAN → PRIORITIZE → RESOURCE → APPROVE → EXECUTE → EVALUATE → HEAD REVIEW → CLOSED</div>
+<svg width="940" height="132" viewBox="0 0 940 132" fill="none">
+<defs><marker id="arw7" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" stroke="#58a6ff" stroke-width="1.5" fill="none"/></marker></defs>
+<g font-size="9.5">
+<rect x="4" y="20" width="76" height="52" rx="7" fill="rgba(34,211,238,.12)" stroke="#22d3ee"/><text x="12" y="40" fill="#e6edf3">Submit</text><text x="12" y="54" fill="#7d8590" font-size="8">Slack+Docs</text>
+<rect x="88" y="20" width="76" height="52" rx="7" fill="rgba(34,211,238,.12)" stroke="#22d3ee"/><text x="96" y="40" fill="#e6edf3">Screen</text><text x="96" y="54" fill="#7d8590" font-size="8">HO</text>
+<rect x="172" y="20" width="76" height="52" rx="7" fill="rgba(34,211,238,.12)" stroke="#22d3ee"/><text x="180" y="40" fill="#e6edf3">Announce</text><text x="180" y="54" fill="#7d8590" font-size="8">channel</text>
+<rect x="256" y="20" width="76" height="52" rx="7" fill="rgba(52,211,153,.12)" stroke="#34d399"/><text x="264" y="40" fill="#e6edf3">Plan</text><text x="264" y="54" fill="#7d8590" font-size="8">Docs+Jira</text>
+<rect x="340" y="20" width="76" height="52" rx="7" fill="rgba(52,211,153,.12)" stroke="#34d399"/><text x="348" y="40" fill="#e6edf3">Prioritize</text><text x="348" y="54" fill="#7d8590" font-size="8">no std → std</text>
+<rect x="424" y="20" width="76" height="52" rx="7" fill="rgba(52,211,153,.12)" stroke="#34d399"/><text x="432" y="40" fill="#e6edf3">Resource</text><text x="432" y="54" fill="#7d8590" font-size="8">mapping</text>
+<rect x="508" y="20" width="76" height="52" rx="7" fill="rgba(251,191,36,.12)" stroke="#fbbf24"/><text x="516" y="40" fill="#e6edf3">Approve</text><text x="516" y="54" fill="#7d8590" font-size="8">Slack wf</text>
+<rect x="592" y="20" width="76" height="52" rx="7" fill="rgba(251,191,36,.12)" stroke="#fbbf24"/><text x="600" y="40" fill="#e6edf3">Execute</text><text x="600" y="54" fill="#7d8590" font-size="8">Jira</text>
+<rect x="676" y="20" width="76" height="52" rx="7" fill="rgba(167,139,250,.14)" stroke="#a78bfa"/><text x="684" y="40" fill="#e6edf3">Evaluate</text><text x="684" y="54" fill="#7d8590" font-size="8">quick/mo</text>
+<rect x="760" y="20" width="76" height="52" rx="7" fill="rgba(167,139,250,.14)" stroke="#a78bfa"/><text x="768" y="40" fill="#e6edf3">Head rev</text><text x="768" y="54" fill="#7d8590" font-size="8">buffer</text>
+<rect x="844" y="20" width="88" height="52" rx="20" fill="rgba(26,174,57,.15)" stroke="#1aae39"/><text x="862" y="48" fill="#e6edf3">Closed</text>
+<line x1="80" y1="46" x2="86" y2="46" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw7)"/><line x1="164" y1="46" x2="170" y2="46" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw7)"/><line x1="248" y1="46" x2="254" y2="46" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw7)"/><line x1="332" y1="46" x2="338" y2="46" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw7)"/><line x1="416" y1="46" x2="422" y2="46" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw7)"/><line x1="500" y1="46" x2="506" y2="46" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw7)"/><line x1="584" y1="46" x2="590" y2="46" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw7)"/><line x1="668" y1="46" x2="674" y2="46" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw7)"/><line x1="752" y1="46" x2="758" y2="46" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw7)"/><line x1="836" y1="46" x2="842" y2="46" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arw7)"/>
+<text x="4" y="100" fill="#fb7185">before: skipped Jira updates · forgotten doc links · approval pinged once then silent · no MPP dashboard · dormant in buffer</text>
+<text x="4" y="118" fill="#34d399">after: field checks · auto-attach · periodic reminders · MPP specced · dormant surfaced by days-on-card</text>
+</g></svg></div>
+<div class="diagram dark"><div class="cap">EVAL SCREENER — SHEET → LOOP → SLACK DM + CHANNEL PING</div>
+<svg width="940" height="128" viewBox="0 0 940 128" fill="none">
+<g font-size="10.5" font-family="JetBrains Mono, monospace">
+<rect x="4" y="14" width="190" height="60" rx="8" fill="rgba(148,163,184,.1)" stroke="#94a3b8"/><text x="16" y="36" fill="#e6edf3">Mang Screener Result</text><text x="16" y="52" fill="#7d8590" font-size="9">2D array, rows from [1]</text>
+<rect x="214" y="14" width="220" height="60" rx="8" fill="rgba(251,191,36,.12)" stroke="#fbbf24"/><text x="226" y="36" fill="#e6edf3">check idx 5·6·7 per row</text><text x="226" y="52" fill="#7d8590" font-size="9">empty / null / 0 → flag</text>
+<rect x="454" y="14" width="220" height="60" rx="8" fill="rgba(167,139,250,.12)" stroke="#a78bfa"/><text x="466" y="36" fill="#e6edf3">{value:1/0, align:1/0}</text><text x="466" y="52" fill="#7d8590" font-size="9">container of flagged rows</text>
+<rect x="694" y="14" width="238" height="60" rx="8" fill="rgba(52,211,153,.12)" stroke="#34d399"/><text x="706" y="36" fill="#e6edf3">DM lead + ping channel</text><text x="706" y="52" fill="#7d8590" font-size="9">complete the eval doc</text>
+<text x="4" y="100" fill="#7d8590">Need Evaluation → quick or monthly? → copy template → fill → confirm → Done evaluation → Buffer Head Review</text>
+<text x="4" y="118" fill="#7d8590">eval confusion fixed with guide: value-breakdown formula + rupiah results shown to motivate</text>
+</g></svg></div>
+<div class="grid4">
+<div class="cell proof"><h4>Bukti</h4><ul>
+<li>11-stage submission map with pain boxes: cards skipped, links forgotten, single-shot approval, no dashboard</li>
+<li>6 proposals on the board: routine listings, auto-generate + auto-attach eval doc, completeness screen, head-review notify</li>
+<li>Eval flow: Need Evaluation → quick/monthly → template → Done → Buffer Head Review, screened at indices 5/6/7</li></ul></div>
+<div class="cell result"><h4>Hasil</h4><ul>
+<li>Lead overhead cut — status from board + channel, not chase-up chats</li>
+<li>Reporting sharpened — contribution counted by script, not self-report</li>
+<li>93% completion across four domains, IDR 280B recorded value (internal tracking)</li></ul></div>
+<div class="cell"><h4>Skill</h4><div><span class="skilltag">ISO 9001 PDCA on R&amp;D</span><span class="skilltag">Process mapping</span><span class="skilltag">Jira workflow design</span><span class="skilltag">Portfolio evaluation</span></div></div>
+<div class="cell"><h4>Tools</h4><div><span class="skilltag">Jira</span><span class="skilltag">Slack workflow + DM</span><span class="skilltag">Docs eval templates</span><span class="skilltag">Sheets + Apps Script</span></div></div>
+</div>
+<div class="toolstript"><b>How to show it:</b> crop the two boards above the red pain boxes. Blur names. Keep the teal stages + purple proposals visible — that contrast is the whole story.</div>
+</div>
+
+<!-- CASE 8 -->
+<div class="case">
+<div class="case-head"><div class="k">Case 08 &middot; TransTrack Maritime IoT &middot; PM / BA — execution engine</div>
+<h2>442 cards created, 282 shipped: running the backlog nobody sees</h2></div>
+<div class="story">
+<p>My name sits on 442 Notion task cards as creator — 272 Completed and 10 Done, 27 still In Progress. Most PM portfolios show the framework. This one is the grunt work underneath: task breakdowns with acceptance criteria and dependencies, sprint capacity tables, Notion card links inside sheet rows, UAT scenarios attached to milestones. On 2 September ten cards closed in one day — FuMS data to Teltonika gateway, Starlink plus router tracking test, bunker online receiver test, new bunker panel build, bunker data to dashboard, FuMS HMI design, LCT PoC, marine wiring, two CCTV jobs including 8-channel setup and live-stream PoC.</p>
+<p>Two cards carry me as developer directly. One is the site timeline for a two-vessel deployment — site survey, goods prep, FAT, mobilization, install, field test — with a 5-day-per-vessel install SLA written in. Status Archived. The other is UAT prep phase 2 for a hull-numbered vessel program, currently On Testing, page still thin with no acceptance criteria yet — honest gap, not a win. I also observe an IPC payload-standard research thread: compact satellite payload format, minute-level airtime, encoded transport over MQTT and API — blocked because general, heartbeat, and error-log docs do not exist yet.</p>
+<p>In the sheets my allocation is small and I keep it visible: Sprint 29 gave me 3 of 48 hours, spent on an AIO module evaluation feedback presentation to management — 3 man-hours, completed, with a dependency link. Same sprint closed a 4-hour feasibility study I ran: local display HMI-only versus LCD, decided from crew interviews plus access mapping. Forward-looking, a 12-hour UAT block for the Palu Sipat bunkering automation sits on my name at milestone M7, not started, waiting on the install chain. The initiative-log PM column itself belongs to the tribe lead, not me — my lane is breakdown, readiness, and test proof.</p>
+</div>
+<div class="diagram dark"><div class="cap">EXECUTION FUNNEL — NOTION TASK DB, CREATED-BY-ME VIEW</div>
+<svg width="940" height="150" viewBox="0 0 940 150" fill="none">
+<g font-size="11">
+<rect x="4" y="30" width="220" height="52" rx="8" fill="rgba(34,211,238,.12)" stroke="#22d3ee"/><text x="16" y="52" fill="#e6edf3">442 created</text><text x="16" y="68" fill="#7d8590" font-size="9">as creator</text>
+<rect x="240" y="30" width="220" height="52" rx="8" fill="rgba(52,211,153,.15)" stroke="#34d399"/><text x="252" y="52" fill="#e6edf3">282 done</text><text x="252" y="68" fill="#7d8590" font-size="9">272 completed + 10 done</text>
+<rect x="476" y="30" width="200" height="52" rx="8" fill="rgba(251,191,36,.12)" stroke="#fbbf24"/><text x="488" y="52" fill="#e6edf3">27 in progress</text><text x="488" y="68" fill="#7d8590" font-size="9">47 next up · 28 backlog</text>
+<rect x="692" y="30" width="240" height="52" rx="8" fill="rgba(148,163,184,.12)" stroke="#94a3b8"/><text x="704" y="52" fill="#e6edf3">11 issues · 19 archived</text><text x="704" y="68" fill="#7d8590" font-size="9">2 as developer · 1 observer</text>
+<text x="4" y="112" fill="#7d8590">sprint 26 (7–21 Jul): FuMS v2.3 PoC two vessels · IPC RS232 fix · power monitoring · flowmeter sim · antenna cabling</text>
+<text x="4" y="130" fill="#7d8590">epic FuMS v2: 20 tasks · domain Hardware Vessel Monitoring (Running since May) · project plot 18 rows: 3 done / 6 in progress / 5 hold</text>
+</g></svg></div>
+<div class="grid4">
+<div class="cell proof"><h4>Bukti</h4><ul>
+<li>Task DB creator view: 442 rows — 272 Completed, 10 Done, 27 In Progress, 47 Next Up, 28 Backlog, 11 Issues, all queryable</li>
+<li>Two-vessel deployment timeline card (survey → FAT → install → field test, 5-day SLA) — Archived; UAT prep card — On Testing</li>
+<li>Sprint 29 allocation table: 3 hours on AIO eval management presentation (completed); 4-hour HMI-vs-LCD feasibility (completed, crew-interview based)</li>
+<li>Forward UAT block: 12-hour Palu Sipat bunkering UAT at M7, dependency-linked, Not Started — plan, not claim</li></ul></div>
+<div class="cell result"><h4>Hasil</h4><ul>
+<li>Ten hardware-software integration jobs closed in a single day — gateway data, connectivity, panel, dashboard, HMI, wiring, CCTV</li>
+<li>Install SLA written into the timeline instead of assumed — 5 days per vessel, FAT before mobilization</li>
+<li>Display decision grounded in crew interviews, not spec preference — HMI-only vs LCD closed with reasons</li></ul></div>
+<div class="cell"><h4>Skill</h4><div><span class="skilltag">Backlog ops at scale</span><span class="skilltag">Task breakdown (AC + DoD + dependency)</span><span class="skilltag">Sprint capacity tracking</span><span class="skilltag">Feasibility studies</span><span class="skilltag">Management presentation</span><span class="skilltag">UAT scenario + berita acara</span><span class="skilltag">FAT / FCT orchestration</span><span class="skilltag">Installation & commissioning</span><span class="skilltag">Cross-functional coordination</span></div></div>
+<div class="cell"><h4>Tools</h4><div><span class="skilltag">Notion Task DB</span><span class="skilltag">Sheets Master Backlog (192 rows)</span><span class="skilltag">Sprint 26–33 tabs</span><span class="skilltag">Timeline + gantt</span><span class="skilltag">Jira cards</span><span class="skilltag">Teltonika gateway</span><span class="skilltag">Starlink + router</span><span class="skilltag">HMI / PLC</span><span class="skilltag">CCTV 8-channel</span><span class="skilltag">MQTT / API payloads</span></div></div>
+</div>
+<div class="toolstript"><b>Honest gap:</b> initiative-log PM ownership sits with tribe lead — my lane is breakdown and test readiness. No impact metrics yet (uptime, accuracy, on-time rate) — to collect from FAT/FCT/UAT records. UAT prep page needs acceptance criteria before it counts.</div>
+</div>
+
+<div class="footer">Names generalized. No contract values, no customer operations data, no internal IDs or links. Screenshots cropped and blurred before public share. Numbers above trace to Q2/Q3 product-experience reports, tech-support reports, the 389-slide Romansa deck, and R&D submission/evaluation boards.</div>
+
+</div>
+</body>
+</html>
